@@ -1,0 +1,14 @@
+###
+GET http://localhost:3030/health
+
+### Create transaction
+POST http://localhost:3030/transactions
+Content-Type: application/json
+
+{
+	"title": "Coffee",
+	"amount": 4.5,
+	"type": "expense",
+	"category": "Food",
+	"date": "2026-03-03"
+}
